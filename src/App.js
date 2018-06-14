@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   handleHeaderClick=()=>{
+    this.props.history.push('/melissa-nock')
     window.location.reload();
   }
 
