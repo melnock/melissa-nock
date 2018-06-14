@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.props.history.push('/home')
+    this.props.history.push('/melissa-nock')
   }
 
   handleHeaderClick=()=>{
@@ -40,7 +40,7 @@ class App extends Component {
       this.setState({
         home: true
       })
-      this.props.history.push('/home')
+      this.props.history.push('/melissa-nock')
     }
 
 
@@ -55,7 +55,7 @@ class App extends Component {
           <NavBar/>
         </header>}
         <div className="routes">
-          <Route exact path="/home" render={()=><HomePage handleEnterClick={this.handleEnterClick} home={this.state.home}/>}/>
+          <Route exact path="/melissa-nock" render={()=><HomePage handleEnterClick={this.handleEnterClick} home={this.state.home}/>}/>
           <Route exact path="/projects" component={ProjectList}/>
           <Route path="/projects/:slug" component={ProjectShow}/>
           <Route exact path="/about" component={AboutPage}/>
