@@ -7,8 +7,6 @@ class NavBar extends React.Component {
 
     return(
       <div className="navbar">
-      {//<Link to="/home"> Home </Link>
-      }
       <Link to="/projects"> Projects </Link>
       <Link to="/about"> About </Link>
       </div>
