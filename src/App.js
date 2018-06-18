@@ -15,11 +15,11 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.props.history.push('/melissa-nock')
+    this.props.history.push('/')
   }
 
   handleHeaderClick=()=>{
-    this.props.history.push('/melissa-nock')
+    this.props.history.push('/')
     window.location.reload();
   }
 
@@ -41,7 +41,7 @@ class App extends Component {
       this.setState({
         home: true
       })
-      this.props.history.push('/melissa-nock')
+      this.props.history.push('/')
     }
 
 
@@ -56,7 +56,7 @@ class App extends Component {
           <NavBar/>
         </header>}
         <div className="routes">
-          <Route exact path="/melissa-nock" render={()=><HomePage handleEnterClick={this.handleEnterClick} home={this.state.home}/>}/>
+          <Route exact path="/" render={()=><HomePage handleEnterClick={this.handleEnterClick} home={this.state.home}/>}/>
           <Route exact path="/projects" component={ProjectList}/>
           <Route path="/projects/:slug" component={ProjectShow}/>
           <Route exact path="/about" component={AboutPage}/>
