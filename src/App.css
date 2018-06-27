@@ -235,4 +235,25 @@ a:hover{
 
 .resume{
   animation: enter 1 2s linear;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.resume h3{
+  width: 100%;
+}
+
+.experience{
+  width: 50%;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.75);
+  margin: 10px;
+}
+
+.technical{
+  width: 20%;
+  margin: auto;
+
 }
