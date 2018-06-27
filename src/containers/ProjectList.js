@@ -30,7 +30,7 @@ const data=[
     links:{
       githubFront: "https://github.com/melnock/dino-griffi-corn-api",
       githubBack: "",
-      liveSite: "#" ,
+      liveSite: "" ,
       demo: "https://youtu.be/xyqRFOPIAIw"
     },
     userDescription: "Play as one of many characters to avoid an ever increasing amount of obstacles.",
